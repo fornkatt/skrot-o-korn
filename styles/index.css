@@ -4,6 +4,13 @@ a {
 
 .wrapper {
   margin: 10px;
+  min-height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
 }
 
 .nav-container {
@@ -34,6 +41,10 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: #ececec;
   color: #252e36;
+}
+
+.main-container {
+  flex: 1;
 }
 
 .officeimg {

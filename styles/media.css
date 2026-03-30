@@ -4,6 +4,13 @@ a {
 
 .wrapper {
   margin: 10px;
+  min-height: calc(100vh - 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  flex: 1;
 }
 
 .nav-container {
@@ -36,7 +43,7 @@ body {
   color: #252e36;
 }
 
-.video-container {
+.main-container {
   text-align: center;
   align-items: center;
 }
