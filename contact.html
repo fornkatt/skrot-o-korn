@@ -9,57 +9,78 @@
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-            <div class="nav-container">
-                <div class="title">
-                    <h1>Skrot och Korn AB</h1>
-                </div>
-                <div class="menu">
-                    <a href="index.html">Hem</a>
-                    <a href="contact.html">Kontakt</a>
-                </div>
-                <div class="spacer"></div>
-            </div>
-        </nav>
-        <div class="contact-container">
-            <div class="employee">
-                <img src="assets/images/lasse.jpg" alt="Bild på Lasse, VD.">
-                <h3>Lasse</h3>
-                <p>VD</p>
-                <a href="mailto:lasse@sokab.se">Email</a>
-            </div>
-            <div class="employee">
-                <img src="assets/images/gusten.jpg" alt="Bild på Gusten, HR">
-                <h3>Gusten</h3>
-                <p>HR</p>
-                <a href="mailto:gusten@sokab.se">Email</a>
-            </div>
-            <div class="employee">
-                <img src="assets/images/olle.jpg" alt="Bild på Olle, HR.">
-                <h3>Olle</h3>
-                <p>HR</p>
-                <a href="mailto:olle@sokab.se">Email</a>
-            </div>
-            <div class="employee">
-                <img src="assets/images/alexander.jpg" alt="Bild på Alexander, verksamhetsansvarig.">
-                <h3>Alexander</h3>
-                <p>Verksamhetsansvarig</p>
-                <a href="mailto:alexander@sokab.se">Email</a>
-            </div>
-            <div class="employee">
-                <img src="assets/images/elias.jpg" alt="Bild på Elias, försäljare.">
-                <h3>Elias</h3>
-                <p>Försäljare</p>
-                <a href="mailto:elias@sokab.se">Email</a>
-            </div>
-            <div class="employee">
-                <img src="assets/images/gretchen.jpg" alt="Bild på Gretchen, försäljare.">
-                <h3>Gretchen</h3>
-                <p>Försäljare</p>
-                <a href="mailto:gretchen@sokab.se">Email</a>
-            </div>
+<div class="wrapper">
+    <nav class="nav-container">
+        <div class="title">
+            <h1>Skrot och Korn AB</h1>
         </div>
+        <div class="menu">
+            <a href="index.html">Hem</a>
+            <a href="products.html">Produkter</a>
+            <a href="media.html">Media</a>
+            <a href="about.html">Om oss</a>
+            <a href="contact.html">Kontakta oss</a>
+        </div>
+        <div class="spacer"></div>
+    </nav>
+    <div class="form-container">
+        <form action="somepage" method="post">
+            <h2>Kontakta oss</h2>
+            <div class="fields">
+                <label>
+                    <input type="text" name="name" placeholder="Namn">
+                </label><br>
+                <label>
+                    <input type="text" name="address" placeholder="Adress">
+                </label><br>
+                <label>
+                    <input type="email" name="email" placeholder="E-post">
+                </label><br>
+                <label>
+                    <input type="text" name="phone" placeholder="Telefon">
+                </label><br>
+            </div>
+            <div class="employee-amount">
+                <p>Antal anställda</p>
+                <div class="radio">
+                    <input type="radio" id="1-100" name="employees" value="1-100">
+                    <label for="1-100">1-100</label><br>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="101-1000" name="employees" value="101-1000">
+                    <label for="101-1000">101-1000</label><br>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="1000+" name="employees" value=">1000">
+                    <label for="1000+">1000+</label><br>
+                </div>
+            </div>
+            <br>
+            <div class="question-textarea">
+                <label for="question" class="question">Ställ en fråga till oss</label><br>
+                <textarea id="question" name="question" rows="15" cols="75"></textarea><br>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <input type="hidden" name="newsletter" value="false">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="true">
+                    <label for="newsletter">Jag vill ha nyhetsbrev</label><br>
+                </div>
+                <div class="button">
+                    <input type="hidden" name="contactbyphone" value="false">
+                    <input type="checkbox" id="contactbyphone" name="contactbyphone" value="true">
+                    <label for="contactbyphone">Jag vill bli kontaktad per telefon</label><br>
+                </div>
+            </div>
+            <div class="send-button">
+                <input type="submit" value="Skicka">
+            </div>
+        </form>
     </div>
+    <div class="footer">
+        <p>Copyright &copy; 2026 Skrot och Korn AB</p>
+        <a href="mailto:info@sokab.se">Kontakta oss</a>
+    </div>
+</div>
 </body>
 </html>

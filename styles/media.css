@@ -36,20 +36,9 @@ body {
   color: #252e36;
 }
 
-.officeimg {
+.video-container {
   text-align: center;
-}
-.officeimg img {
-  border-radius: 10px;
-  width: 50rem;
+  align-items: center;
 }
 
-.main-text {
-  max-width: 400px;
-  margin: 2rem auto;
-}
-.main-text li {
-  margin: 0.5rem auto;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=media.css.map */

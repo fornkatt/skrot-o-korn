@@ -36,20 +36,33 @@ body {
   color: #252e36;
 }
 
-.officeimg {
-  text-align: center;
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 1.5rem;
 }
-.officeimg img {
+
+.employee {
+  margin: 10px;
+}
+.employee img {
+  display: block;
+  margin-bottom: 0.25rem;
+  width: 15rem;
+  height: 12rem;
+  object-fit: cover;
+  object-position: top;
   border-radius: 10px;
-  width: 50rem;
+}
+.employee h3 {
+  margin: 0.25rem 0;
+}
+.employee p {
+  margin: 0.25rem 0;
+}
+.employee a {
+  color: #c2984a;
 }
 
-.main-text {
-  max-width: 400px;
-  margin: 2rem auto;
-}
-.main-text li {
-  margin: 0.5rem auto;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=about.css.map */
