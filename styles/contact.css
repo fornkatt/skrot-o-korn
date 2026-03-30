@@ -1,0 +1,65 @@
+.wrapper {
+  margin: 10px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav-container .title {
+  text-align: left;
+}
+.nav-container .menu {
+  padding: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.nav-container .menu a {
+  color: #c2984a;
+  margin: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin: 25px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #ececec;
+  color: #252e36;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.employee {
+  margin: 10px;
+}
+.employee img {
+  display: block;
+  margin-bottom: 0.25rem;
+  width: 15rem;
+  height: 12rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+.employee h3 {
+  margin: 0.25rem 0;
+}
+.employee p {
+  margin: 0.25rem 0;
+}
+.employee a {
+  color: #c2984a;
+}
+
+/*# sourceMappingURL=contact.css.map */
