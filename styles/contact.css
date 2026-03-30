@@ -9,10 +9,6 @@ a {
   flex-direction: column;
 }
 
-.main-container {
-  flex: 1;
-}
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -45,6 +41,7 @@ body {
 
 .main-container {
   padding: 0 0 10rem 10rem;
+  flex: 1;
 }
 
 .fields input {

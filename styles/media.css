@@ -9,10 +9,6 @@ a {
   flex-direction: column;
 }
 
-.main-container {
-  flex: 1;
-}
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -46,6 +42,7 @@ body {
 .main-container {
   text-align: center;
   align-items: center;
+  flex: 1;
 }
 
 /*# sourceMappingURL=media.css.map */

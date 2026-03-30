@@ -9,10 +9,6 @@ a {
   flex-direction: column;
 }
 
-.main-container {
-  flex: 1;
-}
-
 .nav-container {
   display: flex;
   align-items: center;
@@ -48,6 +44,7 @@ body {
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   gap: 1.5rem;
+  flex: 1;
 }
 
 .product {
