@@ -9,32 +9,46 @@
     <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="nav-container">
-            <div class="title">
-                <h1>Skrot och Korn AB</h1>
-            </div>
-            <div class="menu">
-                <a href="index.html">Hem</a>
-                <a href="products.html">Produkter</a>
-                <a href="media.html">Media</a>
-                <a href="about.html">Om oss</a>
-                <a href="contact.html">Kontakta oss</a>
-            </div>
-            <div class="spacer"></div>
-        </nav>
-        <div class="main-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hJIBp98DztA?si=V8flmNJd26UMlUOP"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-            </iframe>
+<div class="wrapper">
+    <header>
+        <div class="title-wrapper">
+            <h1 class="title">Skrot och Korn AB</h1>
         </div>
-        <div class="footer">
-            <p>Copyright &copy; 2026 Skrot och Korn AB</p>
-            <a href="mailto:info@sokab.se">Kontakta oss</a>
+        <div class="search-box-wrapper">
+            <label>
+                <input type="text" name="search" placeholder="Sök">
+            </label>
+        </div>
+    </header>
+    <div class="main-container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="media.html">Gallery</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakta oss</a></li>
+            </ul>
+        </nav>
+        <div class="main-wrapper">
+            <div class="media-content-wrapper">
+                <iframe src="https://www.youtube.com/embed/hJIBp98DztA?si=V8flmNJd26UMlUOP"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="ad-space">
         </div>
     </div>
+    <footer class="footer">
+        <p>Copyright &copy; 2026 Skrot och Korn AB</p>
+        <div class="contact-us-wrapper">
+            <a href="mailto:info@sokab.se" class="contact-us">Kontakta oss</a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

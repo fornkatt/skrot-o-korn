@@ -10,41 +10,54 @@
 </head>
 <body>
 <div class="wrapper">
-    <nav class="nav-container">
-        <div class="title">
-            <h1>Skrot och Korn AB</h1>
+    <header>
+        <div class="title-wrapper">
+            <h1 class="title">Skrot och Korn AB</h1>
         </div>
-        <div class="menu">
-            <a href="index.html">Hem</a>
-            <a href="products.html">Produkter</a>
-            <a href="media.html">Media</a>
-            <a href="about.html">Om oss</a>
-            <a href="contact.html">Kontakta oss</a>
+        <div class="search-box-wrapper">
+            <label>
+                <input type="text" name="search" placeholder="Sök">
+            </label>
         </div>
-        <div class="spacer"></div>
-    </nav>
+    </header>
     <div class="main-container">
-        <div class="officeimg">
-            <img src="assets/images/office.jpg" alt="Image of a run-down office.">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="media.html">Gallery</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakta oss</a></li>
+            </ul>
+        </nav>
+        <div class="main-wrapper">
+            <img src="assets/images/office.jpg" alt="Image of a run-down office." class="office-img">
+            <div class="main-text">
+                <div class="weoffer">
+                    <h3>Vi erbjuder</h3>
+                    <ul>
+                        <li>Grävskopor</li>
+                        <li>Lyftkranar</li>
+                        <li>Lastbilar</li>
+                    </ul>
+                </div>
+                <div class="aboutus">
+                    <h3>Om oss</h3>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
         </div>
-        <div class="main-text">
-            <div class="weoffer">
-                <h3>Vi erbjuder</h3>
-                <ul>
-                    <li>Grävskopor</li>
-                    <li>Lyftkranar</li>
-                    <li>Lastbilar</li>
-                </ul>
-            </div>
-            <div class="aboutus">
-                <h3>Om oss</h3>
-            </div>
+        <div class="ad-space">
         </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
         <p>Copyright &copy; 2026 Skrot och Korn AB</p>
-        <a href="mailto:info@sokab.se">Kontakta oss</a>
-    </div>
+        <div class="contact-us-wrapper">
+            <a href="mailto:info@sokab.se" class="contact-us">Kontakta oss</a>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

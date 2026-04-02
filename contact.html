@@ -10,21 +10,27 @@
 </head>
 <body>
 <div class="wrapper">
-    <nav class="nav-container">
-        <div class="title">
-            <h1>Skrot och Korn AB</h1>
+    <header>
+        <div class="title-wrapper">
+            <h1 class="title">Skrot och Korn AB</h1>
         </div>
-        <div class="menu">
-            <a href="index.html">Hem</a>
-            <a href="products.html">Produkter</a>
-            <a href="media.html">Media</a>
-            <a href="about.html">Om oss</a>
-            <a href="contact.html">Kontakta oss</a>
+        <div class="search-box-wrapper">
+            <label>
+                <input type="text" name="search" placeholder="Sök">
+            </label>
         </div>
-        <div class="spacer"></div>
-    </nav>
+    </header>
     <div class="main-container">
-        <form action="somepage" method="post">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="products.html">Produkter</a></li>
+                <li><a href="media.html">Gallery</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakta oss</a></li>
+            </ul>
+        </nav>
+        <form action="somepage" method="post" class="contact-form">
             <h2>Kontakta oss</h2>
             <div class="fields">
                 <label>
@@ -58,7 +64,7 @@
             <br>
             <div class="question-textarea">
                 <label for="question" class="question">Ställ en fråga till oss</label><br>
-                <textarea id="question" name="question" rows="15" cols="75"></textarea><br>
+                <textarea id="question" name="question" rows="15"></textarea><br>
             </div>
             <div class="buttons">
                 <div class="button">
@@ -76,6 +82,8 @@
                 <input type="submit" value="Skicka">
             </div>
         </form>
+        <div class="ad-space">
+        </div>
     </div>
     <div class="footer">
         <p>Copyright &copy; 2026 Skrot och Korn AB</p>

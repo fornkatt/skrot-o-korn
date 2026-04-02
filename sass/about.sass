@@ -1,8 +1,8 @@
 ﻿@import "base"
 
-.main-container
+.employee-wrapper
   display: grid
-  grid-template-columns: repeat(3, auto)
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
   justify-content: center
   gap: 1.5rem
   flex: 1
@@ -13,17 +13,25 @@
   img
     display: block
     margin-bottom: 0.25rem
-    width: 15rem
+    width: 100%
+    max-width: 15rem
     height: 12rem
     object-fit: cover
     object-position: top
     border-radius: 10px
 
   h3
+    padding: 0 5px
     margin: 0.25rem 0
 
   p
+    padding: 0 5px
     margin: 0.25rem 0
 
   a
-    color: $link-color
+    display: block
+    padding: 5px
+    width: fit-content
+
+  a:hover
+    background-color: white
