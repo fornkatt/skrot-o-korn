@@ -26,11 +26,6 @@ body {
   padding: 5px;
 }
 
-@media (max-width: 600px) {
-  .title {
-    font-size: 1.7em;
-  }
-}
 header {
   display: flex;
   flex-direction: row;
@@ -51,7 +46,6 @@ header .search-box-wrapper input {
 
 .main-container {
   display: flex;
-  flex-direction: row;
 }
 .main-container .main-wrapper {
   flex: 1;
@@ -65,8 +59,10 @@ header .search-box-wrapper input {
   top: 0;
   align-self: flex-start;
   flex-basis: 150px;
+  display: flex;
 }
 .main-container .main-nav ul {
+  display: flex;
   padding: 0;
   margin: 0 15px 0 10px;
   width: auto;
@@ -103,6 +99,51 @@ header .search-box-wrapper input {
   width: auto;
 }
 
+@media (min-width: 601px) {
+  .main-container {
+    flex-direction: row;
+  }
+  .main-nav {
+    flex-direction: column;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.7em;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .main-container .main-nav {
+    margin: 0 -5px 5px -5px;
+    width: calc(100% + 10px);
+    max-height: 50px;
+    background-color: white;
+    border-bottom: 1px solid #d8d8d8;
+    flex-direction: row;
+  }
+  .main-container .main-nav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+  .main-container .main-nav ul li {
+    width: auto;
+    text-align: center;
+    margin: 0;
+  }
+  .main-container .main-nav ul a {
+    white-space: nowrap;
+    padding: 5px;
+  }
+  .main-container .main-nav a:hover {
+    background-color: #f3f3f3;
+  }
+}
 .office-img-wrapper {
   text-align: center;
 }
